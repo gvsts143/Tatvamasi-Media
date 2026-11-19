@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatvamasimedia | Create • Learn • Grow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Cinzel', 'serif'],
+                    },
+                    colors: {
+                        obsidian: '#08080A',
+                        charcoal: '#111115',
+                        gold: {
+                            400: '#FACC15',
+                            500: '#EAB308',
+                            600: '#CA8A04',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #08080A;
+            color: #F4F4F5;
+        }
+        .gold-glow {
+            box-shadow: 0 0 35px rgba(250, 204, 21, 0.15);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #FEF08A 0%, #FACC15 50%, #CA8A04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-400 selection:text-obsidian">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-obsidian/90 backdrop-blur-md border-b border-yellow-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo & Name (Change 1) -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="logo.jpg" alt="Tatvamasimedia Logo" class="h-11 w-11 rounded-full object-cover border-2 border-gold-400 group-hover:scale-105 transition-transform">
+                    <div>
+                        <span class="font-display font-bold text-xl sm:text-2xl tracking-wide gold-text-gradient block leading-none">Tatvamasimedia</span>
+                        <span class="text-[11px] uppercase tracking-[0.2em] text-zinc-400">Create • Learn • Grow</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#intro" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Channel Intro</a>
+                    <a href="#videos" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Episodes</a>
+                    <a href="#about" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">About</a>
+                    <a href="#contact" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Collaborate</a>
+                    <a href="https://www.youtube.com/@TatvamasiMedia" target="_blank" rel="noopener noreferrer"
+                       class="bg-gold-400 hover:bg-gold-500 text-obsidian font-bold text-sm px-5 py-2.5 rounded-full transition-all transform hover:scale-105 flex items-center gap-2">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        Subscribe
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-zinc-300 hover:text-gold-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal border-b border-yellow-500/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-base font-medium text-zinc-200 hover:text-gold-400">Home</a>
+            <a href="#intro" class="block py-2 text-base font-medium text-zinc-200 hover:text-gold-400">Channel Intro</a>
+            <a href="#videos" class="block py-2 text-base font-medium text-zinc-200 hover:text-gold-400">Episodes</a>
+            <a href="#about" class="block py-2 text-base font-medium text-zinc-200
