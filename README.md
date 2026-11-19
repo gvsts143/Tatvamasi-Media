@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatvamasimedia | Create • Learn • Grow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        display: ['Cinzel', 'serif'],
+                    },
+                    colors: {
+                        obsidian: '#08080A',
+                        charcoal: '#111115',
+                        gold: {
+                            400: '#FACC15',
+                            500: '#EAB308',
+                            600: '#CA8A04',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #08080A;
+            color: #F4F4F5;
+        }
+        .gold-glow {
+            box-shadow: 0 0 35px rgba(250, 204, 21, 0.15);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #FEF08A 0%, #FACC15 50%, #CA8A04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-400 selection:text-obsidian">
+
+    <!-- 1. LOGO IN TOP NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-obsidian/90 backdrop-blur-md border-b border-yellow-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#home" class="flex items-center gap-3 group">
+                    <img src="1000915661.jpg" alt="Tatvamasimedia Logo" class="h-11 w-11 rounded-full object-cover border-2 border-gold-400 group-hover:scale-105 transition-transform">
+                    <div>
+                        <span class="font-display font-bold text-xl sm:text-2xl tracking-wide gold-text-gradient block leading-none">Tatvamasimedia</span>
+                        <span class="text-[11px] uppercase tracking-[0.2em] text-zinc-400">Create • Learn • Grow</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#intro" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Channel Intro</a>
+                    <a href="#videos" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Episodes</a>
+                    <a href="#about" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">About</a>
+                    <a href="#contact" class="text-sm font-medium text-zinc-300 hover:text-gold-400 transition-colors">Collaborate</a>
+                    <a href="https://www.youtube.com/@TatvamasiMedia" target="_blank" rel="noopener noreferrer"
+                       class="bg-gold-400 hover:bg-gold-500 text-obsidian font-bold text-sm px-5 py-2.5 rounded-full transition-all transform hover:scale-105 flex items-center gap-2">
+                        Subscribe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. STUDIO PHOTO IN HERO SECTION -->
+    <section id="home" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-gold-400 text-xs font-semibold tracking-widest uppercase mb-6">
+                Your Digital Media Partner • @TatvamasiMedia
+            </span>
+            <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
+                Welcome to <span class="gold-text-gradient">Tatvamasimedia</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-zinc-400 text-lg sm:text-xl leading-relaxed mb-10">
+                Meaningful conversations, inspiring stories, and thought-provoking podcasts hosted by <strong class="text-zinc-200">Tripureshwar</strong>.
+            </p>
+
+            <div class="max-w-5xl mx-auto">
+                <div class="rounded-2xl overflow-hidden border-2 border-yellow-500/40 gold-glow bg-charcoal">
+                    <img src="1000915658.jpg" alt="Tatvamasimedia Studio - Host Tripureshwar" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ANIMATED LOGO VIDEO SECTION -->
+    <section id="intro" class="py-16 bg-charcoal/60 border-y border-yellow-500/15">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-display text-2xl sm
+
